@@ -1,0 +1,316 @@
+/*  ===== MOBILE styles (reside at the top and are inherited by all devices) ===== */
+/*  ===== See tablet, desktop, and print @media queries at the bottom. */
+
+
+/*   ----- Imports  -----  */
+          /* Add fonts from the app's server 
+@font-face {                
+  font-family: 'FontName';
+  src: url('FontName.woff2') format('woff2');
+} 
+          */                           
+
+          /* ...or hosted services like Google Fonts 
+@import url(//fonts.googleapis.com/css?family=Font+Name);
+          */
+
+         /* @import '../node_modules/modern-normalize/modern-normalize.css';*/
+          /* npm install modern-normalize 
+            Resets elements for browser consistancy.  
+            http://nicolasgallagher.com/about-normalize-css/ 
+          */
+
+          /* Component-specific stylesheets, if any 
+@import "component1.css";   
+          */
+
+
+/*   ----- Variables  Optional-----  */
+/*:root {
+  --custom-color-name:;
+  --custom-embellishment-name:;
+}*/
+
+@import url('https://fonts.googleapis.com/css?family=Tangerine');
+/*  ----- Viewport ----- elements inherited by all remaining elements ----- */
+body {       /* Can alternatively define in html {} or :root {} */
+  
+  background-image: url(./images/lily.png);
+  background-size:100vw 100vh;
+  background-repeat: no-repeat;
+  color:bisque;
+  text-shadow: 4px 4px 4px #aaa;
+  background-color:transparent;
+  font-family:Georgia, serif;
+  font-size: 12px;;
+  margin: 2px;;
+  padding: 12px;;
+}
+
+/* ----- Anchors ----- Text links */
+/*a {}
+a:link {}
+a:hover {}
+a:active {}
+a:visited {}
+*/
+/*  ----- Navigation ----- Override text links for navigation only.  */
+nav {
+  background-color: transparent;
+  color:blueviolet;
+  
+  border:4px;
+  font-size:30px;
+  font-weight:bold;
+  line-height:18px;
+  margin:8px;
+  padding:12px;
+  text-decoration: blueviolet underline overline;
+}
+nav a {
+  background-color: transparent;
+  color:blueviolet;
+  
+  border:4px;
+  font-size:30px;
+  font-weight:bold;
+  line-height:18px;
+  margin:8px;
+  padding:12px;
+  text-decoration: blueviolet underline overline;
+  
+}
+nav a:hover{
+  background-color: #ffffff;
+  color:blueviolet;
+  
+  border:4px;
+  font-size:30px;
+  font-weight:bold;
+  line-height:18px;
+  margin:8px;
+  padding:12px;
+  text-decoration: blueviolet underline overline;
+}
+
+/*  ----- Page layout blocks -----  */
+header{
+  background-color:transparent;
+  color:rgb(136, 6, 125);
+  border:1px;
+  font-family:Georgia, serif;
+  font-size:14px;
+  font-weight:bold;
+  margin:2px;
+  padding:2px;
+
+}
+footer{
+  
+  color:rgb(136, 6, 125);
+  border:1px;
+  font-family:Georgia, serif;
+  font-style:italic;
+  font-size:18px;
+  font-weight:bold;
+  margin:2px;
+  padding:2px;
+
+}
+
+
+main {
+  background-color:transparent;
+  color:rgb(119, 2, 228);
+  border:4px;
+  padding:4px;
+}/*
+section {}
+  article {}
+    #topic1 {}
+    #topic2 {}
+    #gallery1 {}
+    #gallery2 {}
+div {}
+aside {}
+footer {}
+*/
+
+/*  -----  Typography  ----- */
+p {
+  font-size:40px;
+  font-family:Tangerine, serif;
+  font-weight:bold;
+  
+  color:rgb(18, 90, 3)
+}
+/*br {}
+ol, ul, dl {}
+li {}
+dt {}
+dd {}*/
+
+h1, h2 {} /* Define consistant font family.*/
+h1 {
+  font-family:Tangerine, serif;
+  font-size: 40px;
+  color:darkgreen;
+}
+h2 {
+  font-family:Georgia, serif;
+  font-style:italic;
+  font-size:20px;
+  color:blueviolet
+}
+
+
+/*abbr {}
+acronym {}
+address {}
+blockquote {}
+  q {}
+  cite {}
+em {}
+hr {}
+mark {}
+s {}
+span {}
+strong {}
+sub {}
+sup {}
+time {}*/
+
+/*  ----- Coding or instructional typography ----- 
+pre {}
+code {}
+kbd {}
+samp {}
+var {}
+del {} 
+ins {}*/
+
+/*  ----- Table ----- */
+table {
+  border-collapse:collapse;
+}
+caption {
+  font-family:Georgia, serif;
+  font-style:italic;
+  font-size:15px;
+}
+thead {
+  font-family:Georgia, serif;
+  font-style:italic;
+  font-size:15px;
+}
+tbody {
+  font-family:Georgia, serif;
+  font-style:italic;
+  font-size:15px;
+}
+tfoot {}
+tr {
+  border:blueviolet;
+  padding:4px;
+}
+tr:nth-child(even) {}
+th {
+  border:blueviolet;
+  padding:4px;
+}
+td {
+  border:blueviolet;
+  padding:4px;
+}
+  td:nth-child(1) {}
+colgroup {}
+data {}
+datalist {}
+
+
+/*  ----- Form ----- */
+form {}
+fieldset {
+}
+  legend {
+    font-family:Georgia, serif;
+  font-style:italic;
+  font-weight:bold;
+  font-size:16px;
+  color:darkgreen;
+  white-space:normal;
+  width: 100%;
+  
+  }
+  legend span{
+    display:block;
+    width:100%;
+    white-space:normal;
+  }
+
+label {
+  font-weight:bold;
+  font-family:Georgia, serif;
+  font-style:italic;
+}
+  button {
+    padding:12px;
+    font-family:Georgia, serif;
+  }
+  input {
+    padding:12px;
+    font-family:Georgia, serif;
+  }
+  /*output {}
+  meter {}
+  progress {}
+  select {}
+    optgroup {}
+    option {}
+  textarea {}*/
+
+/* ----- Media ----- 
+figure {}
+  figcaption {}
+img {}
+svg {}
+picture {}
+  source {}
+iframe {}
+video {}
+audio {}
+embed {}
+object {}*/
+
+
+/*  ----- Classes for alignment, positioning, widths, grids, embellishments, and animation -----  
+.floatright {}
+.floatleft {}
+.center-middle {}
+
+.ten {}
+.twenty {}
+.thirty {}
+.forty {}
+.fifty {}
+.sixty {}
+.seventy {}
+.eighty {}
+
+.radius {}
+.circle {}
+.boxshadow {}
+.tshadow {} 
+.gradient {}
+.shape {}
+
+@keyframes App-logo {}*/
+
+/*   ===== TABLET  media query overrides mobile styles ===== */
+@media all and (min-width: 600px) {}
+
+/*   ===== DESKTOP  media query overrides mobile and tablet styles ===== */
+@media all and (min-width: 1080px) {}
+
+/*   ===== PRINT  media query overrides previous styles =====  */
+@media print {}
